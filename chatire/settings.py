@@ -25,7 +25,7 @@ SECRET_KEY = '@%fq8_e(dmv62fs5mknv&7d$p^=hiay51_2r!yvdh^n@$@hhy2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['35.244.19.63']
+ALLOWED_HOSTS = ['35.244.19.63','127.0.0.1']
 
 
 # Application definition
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'djoser',
     'corsheaders',
+    'chat',
+    'notifications',
 ]
 
 MIDDLEWARE = [
