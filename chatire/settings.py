@@ -131,3 +131,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
 }
+
+# Celery settings
+CELERY_TASK_ALWAYS_EAGER = True
+
+# notifications settings
+NOTIFICATIONS_CHANNELS = {
+   'websocket': 'chat.channels.BroadCastWebSocketChannel'
+}
